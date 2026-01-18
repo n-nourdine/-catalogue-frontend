@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue Nourdine 3D</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+
+    <button class="nav-btn prev-btn" id="prevBtn">
+        <svg class="arrow-icon" viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" /></svg>
+    </button>
+    <button class="nav-btn next-btn" id="nextBtn">
+        <svg class="arrow-icon" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" /></svg>
+    </button>
+
+    <div id="loading">Chargement du catalogue...</div>
+
+    <div id="book" class="book-wrapper" style="display:none;">
+        <div class="page -hard cover-page">
+            <div class="cover-content">
+                <h1 class="brand-title">NOURDINE<br>MAKER</h1>
+                <p class="brand-subtitle">CATALOGUE 2026</p>
+                <div class="brand-tag">IMPRESSION 3D & DESIGN</div>
+            </div>
+        </div>
+        
+        <div class="page -hard contact-page">
+            <h2>CONTACT</h2>
+            <p>Nourdine Nasser</p>
+            <p>Dakar, Sénégal</p>
+            <p class="email">learn.nasser@gmail.com</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.js"></script>
+    
+    <script type="module" src="src/js/app.js"></script>
+</body>
+</html>

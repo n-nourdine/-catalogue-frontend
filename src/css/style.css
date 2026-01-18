@@ -1,0 +1,228 @@
+body {
+  background-color: #2c3e50;
+  /* Fond gris-bleu professionnel */
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+  position: relative;
+  /* Nécessaire pour positionner les flèches */
+}
+
+/* --- STYLES DES FLÈCHES DE NAVIGATION --- */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #2c3e50;
+  z-index: 100;
+  /* Au-dessus du livre */
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.nav-btn:hover {
+  background-color: #e67e22;
+  /* L'orange de ta charte */
+  color: white;
+  transform: translateY(-50%) scale(1.1);
+  /* Petit effet de grossissement */
+  box-shadow: 0 6px 20px rgba(230, 126, 34, 0.4);
+}
+
+.nav-btn:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.prev-btn {
+  left: 40px;
+}
+
+.next-btn {
+  right: 40px;
+}
+
+/* Icone SVG pour les flèches (plus propre que du texte) */
+.arrow-icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+
+/* --- LE LIVRE --- */
+.book-wrapper {
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+}
+
+.page {
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  border-right: 1px solid #eee;
+}
+
+/* --- CONTENU INTERNE (Showcase) --- */
+.visual-showcase {
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-view {
+  flex: 2;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-view img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.view-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.angles-gallery {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+}
+
+.angle-view {
+  flex: 1;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.angle-view img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 30px;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.collection-tag {
+  color: #e67e22;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  margin: 0 0 15px 0;
+  color: #333;
+  line-height: 1.1;
+}
+
+.description {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.tech-specs {
+  background-color: #f8f9fa;
+  border-left: 4px solid #e67e22;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.spec-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 5px;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 2px;
+}
+
+.spec-item:last-child {
+  border: none;
+}
+
+.spec-label {
+  font-weight: bold;
+  color: #555;
+}
+
+.spec-value {
+  color: #333;
+}
+
+.footer-action {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.price {
+  font-family: 'Oswald', sans-serif;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+.btn-order {
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-order:hover {
+  background-color: #e67e22;
+}
