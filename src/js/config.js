@@ -1,6 +1,6 @@
 export const CONFIG = {
     // L'URL de ton Backend Render
-    API_URL: 'https://catalogue-backend-g793.onrender.com/api/products',
+    API_URL: 'https://catalogue-backend-g793.onrender.com',
     
     // Options du livre
     FLIPBOOK_OPTIONS: {
